@@ -1,0 +1,225 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.1 distribution.
+%   Version 4.1r of REVTeX, August 2010
+%
+%   Copyright (c) 2009, 2010 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.1
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+
+\documentclass[aps, pre, twocolumn, nofootinbib]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{multirow,caption}
+%\usepackage{multicols}
+\usepackage{amsmath}
+\usepackage{hhline}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+%\usepackage[table]{xcolor}
+%\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[thinlines]{easytable}
+
+\setlength{\arrayrulewidth}{0.3mm}
+%\setlength{\tabcolsep}{10pt}
+%\renewcommand{\arraystretch}{2.5}
+
+\begin{document}
+%\stepcounter{section}
+\preprint{APS/123-QED}
+
+\title{Exploring and understanding the Interdependence of Collaboration Networks}
+
+\author{Chakresh Kr. Singh}
+\email{chakresh.singh@iitgn.ac.in}
+%\affiliation{Indian Institute of Technology, Gandhinagar, India-382355}
+\author{Demival Vasques Filho}
+\email{d.vasques@auckland.ac.nz}
+%\affiliation{University of Auckland, New Zealand}
+\author{Dion O' Neale}
+\email{d.oneale@auckland.ac.nz}
+%\affiliation{University of Auckland, New Zealand}
+
+\author{Shivakumar Jolad}
+\email{shiva.jolad@iitgn.ac.in}
+%\affiliation{University of Auckland, New Zealand}
+
+
+\date{\today}
+
+\begin{abstract}
+In this project we explore the interdependence between collaboration networks (citation and co-authorship in our case). Empirical study gives us evidence of strong correlation between the growth of a citation network and its corresponding co-authorship network. Literature review suggests that the strong correlation is indicative of interdependence between the simultaneous growth of these networks and that growth of one is effected by another. Through this project we try to understand this correlation and see if it has any mathematical structure.
+%\begin{description}
+%\item[Keywords]
+
+%\item[PACS numbers]
+%87.19.X-, 87.10.Mn , 87.23.Ge, 05.45.Tp, 07.05.Tp
+%\end{description}
+
+\end{abstract}
+
+%\pacs{Valid PACS appear here}
+\maketitle
+
+
+\section{Introduction}
+
+Easier access to meta-data of published articles has opened up opportunities to understand the mechanism of growth of a subject and diffusion of knowledge between researchers. Citation and Co-authorship networks have been investigated separately(references) and together(references) to look for underlying mechanism driving the evolution of these networks.
+
+In this paper we focus on one to one relationship between authors publishing together and exchanging citations over time. The choice of our dataset enabled us to trace the entire history of authors interaction in co-authorship and citation networks. We believe that systematic analysis of these relationships will give greater insight into authors behavior in the collaboration networks. 
+
+Our work complements the existing literature on citation and co-author relationships(possible references), however our approach focuses more on the interdependent evolution of co-authorship and citation networks. We believe that both these networks are mainly driven by decisions taken by the authors in the networks hence if we are able to characterize their behavior we can predict the simultaneous growth of collaboration and citation network(previous studies that attempt this ex. Ramasco and all)
+
+The central theme of this paper can be broken down into following questions which we answer through our analysis:
+
+\begin{itemize}
+	\item What fraction of authors exchange citations but do not co-author?
+	\item What fraction of authors co-author but never exchange citations?
+	\item How does the above vary with network distance between authors?
+	\item What is the response of authors to the citations received?
+	\item How does the average network distance change between authors over time?
+	\item What is the effect of citations on network distance on co-authorship network and vice-versa?
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.28]{plots/goals}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Possibile events as the citation and co-authorship networks evolve. Dotted lines indicate Possibility of event occuring at later time given the existing events(solid) at previous time.}
+	\label{f1}
+\end{figure}
+
+Fig.\ref{f1} summarizes the possible events in the evolution of collaboration networks. 
+
+In the following sections we explain the construction of Distance and Citation matrices followed by our results and empirical calculations. We conclude with our discussion and future work.
+
+\section{Methods}
+
+We construct cumulative bipartite graphs of (top nodes)papers and (bottom nodes)authors from 1970-2013 for Indian publications in APS journals. We also construct two sets of citation graphs i) cumulative including all citations and ii)non-cumulative with citations only between Indians, for each year. We then remove naming dis-ambiguity and check manually for possible repetitions in names. After pre-processing the number of unique authors who had Indian affiliation were 8084. Each node(author) in the co-authorship network is assigned a unique ID and the nodes are ordered alphabetically which is kept consistent for all calculations
+
+Matrices of size($N\times N$) where $N = 8084$ defined below, capturing distance between two pairs(ij) of authors and citations exchanged between them were constructed for every time period.
+
+$D_{ij}(t) = 	\begin{cases} d_{ij} ,$ if ij have a path$ \\
+                         			0 $ otherwise$
+           		\end{cases}$ \\
+
+$D_{ij}(t)$ captures the distance between each pair of nodes in that network. It is to be noted that $D_{ij} = 0$ can also mean that the nodes do not exist in the network at that time.   
+
+$C(t) = 	\begin{cases} 	C^{ij}_{in} ,$ number of times j cites i $ \\
+                           C^{ji}_{out} ,$ number of times i cites j $
+           	\end{cases}$\\
+ 
+$C(t)$ stores the citations exchanged between papers written by i and j for the given time t. The citations recorded are cumulative. The above citation and distance matrices store the history of interactions between all possible author  $\binom{N}{2}$ where $N = 8084$ from 1970-2013. We use these matrices for all our calculations in the paper.
+
+%%%%%%%%%%% continue from here
+
+Method for plotting fig\ref{f4}: We extract the distance 1 collaborations at the end of data (edges in 2013 co-authorship graph). We then trace the presence of edge between i and j (contributing authors) in reverse. The time when the edge 1st appears is marked $T_c$. Then we check for the presence of i and j in the network before $T_c$ and stop at time $T_0$ when both i and j appear together in the network. The number of citations exchanged by pairs at every time before and after collaboration are recorded. The obtained time series is shifted on the axis to 0 so that we can compare the citation exchanged before and after first collaboration.
+
+The above is done for $\approx 44000$ pairs. Out of these we remove the pairs that had $T_0 = T_c$. The remaining are author pairs who took at least 1 year to collaborate after appearing together in the network($\approx 13000$).  
+
+\section{Results}
+
+\begin{figure*}[htbp]  
+	\centering
+	\includegraphics[scale = 0.33]{plots/d_m_1990}
+	\includegraphics[scale = 0.33]{plots/d_m_2000}
+	\includegraphics[scale = 0.33]{plots/d_m_2013}
+	
+	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_1990}
+	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_2000}
+	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_2013}
+	
+  \captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+  \caption{Distance Matrices for the years 1990,2000 and 2013 from top left to right. As the network evolves the color gradient represents the distribution of distances in co-authorship network at the given time. The bottom panel plot the distribution ratios of distanes $d_{ij}$ between pairs for the years 1990,2000 and 2013 (left to right)}
+  \label{f2}
+\end{figure*}
+In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to the network size. Distribution of distances in the network as it  evolves shows the increased connectivity between authors at different distances. The peak of the distribution is between 5 and 7 and the spread from the mean(variance) also decreases as the network evolves with time. 
+
+{\color{blue}We should compare this with existing analytical function for distances in a network(probably Newman has some review over this) and see if we can explain the pattern in a much better way.}
+
+\begin{figure}
+	\centering
+	
+	\includegraphics[scale = 0.55]{plots/fig1}
+	
+\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+\caption{Total number of citations between pairs of authors VS distance D between pairs in the co-authorship network(for all years till 2013)}
+   \label{f3}
+\end{figure}
+
+\begin{figure*}
+	\centering
+
+	\includegraphics[scale = 0.49]{plots/fig2}
+	\includegraphics[scale = 0.49]{plots/fig3}
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	
+	\caption{Change in the number of citations exchanged between pair ij at distance D with time}
+	\label{f3a}
+\end{figure*}
+
+The number of citations exchanged by pairs ij of authors at distance d apart in the co-authorship network for a time t falls almost exponentially as in Fig\ref{f3}. We ignore the citation exchanged between pairs that have no path in between.(Reason of doing this? Maybe because we are only interested in seeing the change in citations with your near or distant collaborators). Later we do study the history of co-authorship events to see the change in citations exchange before and after direct collaboration. 
+Another way to look at the same is to measure the rate of change of citations exchanged between ij pairs at a distance d for the time series data Fig\ref{f3a}. We notice that for direct collaborations(co-authorship events) the rate of citations exchanged increase with time with a sudden transition post 1995 which is also true for average degree of nodes as shown in figure. However the growth rate falls rapidly for distance 2 between pairs and is almost zero for distance 3 and higher. {\color{blue}This means that the citations exchange between ij pairs far in the co-authorship network could be considered as random.}
+
+The change in the strength of collaboration between two authors i and j can be seen in fig\ref{f4}. Here the strength of collaboration is indicated by the total citations exchanged by i and j in that time period through their papers. This includes cases where i and j cite there previously written paper. For our case this adds to the strength. 
+
+{\color{red}Literature review suggests that there is a threshold time for every paper to be discovered for citation hence it would be very uncommon for authors to cite papers published in the same year of their publication unless they know they know the authors or are working together. for ex. I would know more about my colleagues papers}
+
+
+
+\begin{figure*}[htbp]  
+	\centering
+	
+	\includegraphics[scale = 0.49]{plots/d1}
+	\includegraphics[scale = 0.49]{plots/aging_in_colab}
+		
+\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+\caption{Distribution of citations exchanged before and after Time of first co-authorship event between authors. The sudden peak and rise is an interesting observation specially the decay part.}
+   \label{f4}
+\end{figure*}
+
+\begin{figure*}[htbp]  
+	\centering
+	
+	\includegraphics[scale = 0.49]{plots/d2}
+	\includegraphics[scale = 0.49]{plots/d2_avg}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Distribution of citations exchanged before and after Time of first co-authorship event between authors. The sudden peak and rise is an interesting observation specially the decay part.}
+	\label{f5}
+\end{figure*}
+
+It is observed that the citations exchanged peak after 1st collaboration and then fall. Interestingly the peak for this distribution is within 4 years of $T_c$. The mean active period for Indians is around 4.5 years (from our previous study). The decay observed fits really well with the Weinbull distribution defined as :
+
+\begin{equation}
+ f(t) = \frac{b}{n}(\frac{t}{n})^{b-1} e^{-(\frac{t}{n})^b}
+\end{equation}
+
+This function as discussed in the paper in PNAS(cite the PNAS aging paper) defines the change in probability of a paper receiving a citation after t years of publication. 
+
+In our case it represents the decay in strength of collaboration. We need to explain the significance of parameters b and n in distribution. The observed decay in strength of collaboration can be an implicit cause due the aging function for probability of a paper receiving citation as proposed in the paper(PNAS). 
+
+The change near $T_c$ however is almost like a step function. The final function can be modeled as a convolution of two functions (step+aging). However we need to be sure of the information represented by the observed distribution.
+
+\subsection{Probability Calculations}
+
+
+\end{document}
