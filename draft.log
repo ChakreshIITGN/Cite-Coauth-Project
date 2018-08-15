@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  15 AUG 2018 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  16 AUG 2018 02:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,99 +511,99 @@ File: plots/goals.png Graphic file (type png)
 Package pdftex.def Info: plots/goals.png used on input line 103.
 (pdftex.def)             Requested size: 226.8058pt x 55.08542pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./plots/goals.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
-<plots/d_m_1990.pdf, id=18, 433.62pt x 433.62pt>
+<plots/d_m_1990.pdf, id=16, 433.62pt x 433.62pt>
 File: plots/d_m_1990.pdf Graphic file (type pdf)
  <use plots/d_m_1990.pdf>
-Package pdftex.def Info: plots/d_m_1990.pdf used on input line 142.
+Package pdftex.def Info: plots/d_m_1990.pdf used on input line 160.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
-<plots/d_m_2000.pdf, id=19, 433.62pt x 433.62pt>
+<plots/d_m_2000.pdf, id=17, 433.62pt x 433.62pt>
 File: plots/d_m_2000.pdf Graphic file (type pdf)
  <use plots/d_m_2000.pdf>
-Package pdftex.def Info: plots/d_m_2000.pdf used on input line 143.
+Package pdftex.def Info: plots/d_m_2000.pdf used on input line 161.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
-<plots/d_m_2013.pdf, id=20, 433.62pt x 433.62pt>
+<plots/d_m_2013.pdf, id=18, 433.62pt x 433.62pt>
 File: plots/d_m_2013.pdf Graphic file (type pdf)
  <use plots/d_m_2013.pdf>
-Package pdftex.def Info: plots/d_m_2013.pdf used on input line 144.
+Package pdftex.def Info: plots/d_m_2013.pdf used on input line 162.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
-<plots/Dij_dist_hist_1990.pdf, id=21, 433.62pt x 433.62pt>
+<plots/Dij_dist_hist_1990.pdf, id=19, 433.62pt x 433.62pt>
 File: plots/Dij_dist_hist_1990.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_1990.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 146.
+Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 164.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
-<plots/Dij_dist_hist_2000.pdf, id=22, 433.62pt x 289.08pt>
+<plots/Dij_dist_hist_2000.pdf, id=20, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2000.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2000.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 147.
+Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 165.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
-<plots/Dij_dist_hist_2013.pdf, id=23, 433.62pt x 289.08pt>
+<plots/Dij_dist_hist_2013.pdf, id=21, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2013.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2013.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 148.
+Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 166.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
-<plots/fig1.pdf, id=24, 433.62pt x 289.08pt>
+<plots/fig1.pdf, id=22, 433.62pt x 289.08pt>
 File: plots/fig1.pdf Graphic file (type pdf)
  <use plots/fig1.pdf>
-Package pdftex.def Info: plots/fig1.pdf used on input line 161.
+Package pdftex.def Info: plots/fig1.pdf used on input line 179.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
 
-<plots/fig2.pdf, id=25, 433.62pt x 289.08pt>
+<plots/fig2.pdf, id=23, 433.62pt x 289.08pt>
 File: plots/fig2.pdf Graphic file (type pdf)
  <use plots/fig2.pdf>
-Package pdftex.def Info: plots/fig2.pdf used on input line 171.
+Package pdftex.def Info: plots/fig2.pdf used on input line 189.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
-<plots/fig3.pdf, id=26, 433.62pt x 289.08pt>
+<plots/fig3.pdf, id=24, 433.62pt x 289.08pt>
 File: plots/fig3.pdf Graphic file (type pdf)
  <use plots/fig3.pdf>
-Package pdftex.def Info: plots/fig3.pdf used on input line 172.
+Package pdftex.def Info: plots/fig3.pdf used on input line 190.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
-
-<plots/d1.png, id=27, 433.62pt x 289.08pt>
+ [2]
+<plots/d1.png, id=33, 433.62pt x 289.08pt>
 File: plots/d1.png Graphic file (type png)
  <use plots/d1.png>
-Package pdftex.def Info: plots/d1.png used on input line 191.
+Package pdftex.def Info: plots/d1.png used on input line 210.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
-<plots/aging_in_colab.pdf, id=29, 433.62pt x 289.08pt>
+<plots/aging_in_colab.pdf, id=35, 433.62pt x 289.08pt>
 File: plots/aging_in_colab.pdf Graphic file (type pdf)
 
 <use plots/aging_in_colab.pdf>
-Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 192.
+Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 211.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2.png, id=30, 433.62pt x 289.08pt>
+ <plots/d2.png, id=36, 433.62pt x 289.08pt>
 File: plots/d2.png Graphic file (type png)
 
 <use plots/d2.png>
-Package pdftex.def Info: plots/d2.png used on input line 202.
+Package pdftex.def Info: plots/d2.png used on input line 221.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2_avg.png, id=31, 433.62pt x 289.08pt>
+ <plots/d2_avg.png, id=37, 433.62pt x 289.08pt>
 File: plots/d2_avg.png Graphic file (type png)
 
 <use plots/d2_avg.png>
-Package pdftex.def Info: plots/d2_avg.png used on input line 203.
+Package pdftex.def Info: plots/d2_avg.png used on input line 222.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
 No file draft.bbl.
-[2] [3 <./plots/d_m_1990.pdf> <./plots/d_m_2000.pdf
+[3 <./plots/d_m_1990.pdf> <./plots/d_m_2000.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/d_m_2000.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -637,13 +637,13 @@ pdfTeX warning: /usr/bin/pdflatex (file ./plots/aging_in_colab.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 > <./plots/d2.png> <./plots/d2_avg.png>] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
- 6192 strings out of 494953
- 86790 string characters out of 6180977
- 194565 words of memory out of 5000000
- 9367 multiletter control sequences out of 15000+600000
+ 6195 strings out of 494953
+ 86847 string characters out of 6180977
+ 175565 words of memory out of 5000000
+ 9370 multiletter control sequences out of 15000+600000
  12636 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,8n,38p,666b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,38p,694b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
@@ -656,11 +656,12 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on draft.pdf (4 pages, 327840 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on draft.pdf (4 pages, 346033 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 459 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

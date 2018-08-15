@@ -113,6 +113,8 @@ In the following sections we explain the construction of Distance and Citation m
 
 \section{Methods}
 
+\subsection{Data Matrices}
+
 We construct cumulative bipartite graphs of (top nodes)papers and (bottom nodes)authors from 1970-2013 for Indian publications in APS journals. We also construct two sets of citation graphs i) cumulative including all citations and ii)non-cumulative with citations only between Indians, for each year. We then remove naming dis-ambiguity and check manually for possible repetitions in names. After pre-processing the number of unique authors who had Indian affiliation were 8084. Each node(author) in the co-authorship network is assigned a unique ID and the nodes are ordered alphabetically which is kept consistent for all calculations
 
 Matrices of size($N\times N$) where $N = 8084$ defined below, capturing distance between two pairs(ij) of authors and citations exchanged between them were constructed for every time period.
@@ -129,11 +131,27 @@ $C(t) = 	\begin{cases} 	C^{ij}_{in} ,$ number of times j cites i $ \\
  
 $C(t)$ stores the citations exchanged between papers written by i and j for the given time t. The citations recorded are cumulative. The above citation and distance matrices store the history of interactions between all possible author  $\binom{N}{2}$ where $N = 8084$ from 1970-2013. We use these matrices for all our calculations in the paper.
 
-%%%%%%%%%%% continue from here
+For tracing the history of co-authorship events fig\ref{f4}, we extract the distance 1 collaborations at the end of data (edges in 2013 co-authorship graph). We then trace the presence of edge between i and j (contributing authors) in reverse. The time when the edge 1st appears is marked $T_c$. Then we check for the presence of i and j in the network before $T_c$ and stop at time $T_0$ when both i and j appear together in the network. The number of citations exchanged by pairs at every time before and after collaboration are recorded. The obtained time series is shifted on the axis to 0 so that we can compare the citation exchanged before and after first collaboration.
 
-Method for plotting fig\ref{f4}: We extract the distance 1 collaborations at the end of data (edges in 2013 co-authorship graph). We then trace the presence of edge between i and j (contributing authors) in reverse. The time when the edge 1st appears is marked $T_c$. Then we check for the presence of i and j in the network before $T_c$ and stop at time $T_0$ when both i and j appear together in the network. The number of citations exchanged by pairs at every time before and after collaboration are recorded. The obtained time series is shifted on the axis to 0 so that we can compare the citation exchanged before and after first collaboration.
+The above is done for $\approx 44000$ pairs. Out of these we remove the pairs that had $T_0 = T_c$. The remaining are author pairs who took at least 1 year to collaborate after appearing together in the network($\approx 13000$).  We do the same for pairs that have distance d = 2 and higher in the end and compare with d=1 pairs. 
 
-The above is done for $\approx 44000$ pairs. Out of these we remove the pairs that had $T_0 = T_c$. The remaining are author pairs who took at least 1 year to collaborate after appearing together in the network($\approx 13000$).  
+\subsection{Calculations}
+
+\subsubsection{Cite but do not co-author:} 
+For all pairs in Citation matrix at time t $C(t)$, we count the number of pairs $N^C$ with $C(t)_{ij} + C(t)_{ji} != 0$. Among the pairs $N^C$ we count pairs $N^C_{(d!=1)}$ that have $d_{ij} != 1$ and $N^C_{(d=0)}$ $d_{ij} = 0$ given that the network had $N(t)$ nodes at time t.
+
+With $\binom{N(t)}{2}$ possible pairs we can calculate respective fractions 
+
+\subsubsection{Co-author but do not cite:}
+For all pairs in Distance matrix (considering only the upper diagonal) at time t $D(t)$ we count pairs $N^D$ with  $D_{ij} = 1$. Among the pairs $N^D$ we count pairs $N^D_{(C_{ij} + C_{ji}=0)}$
+
+
+\subsubsection{Reciprocity:}
+For every author $i$ in the Citation matrix $C(t)$ we define $N_i$ number of authors that cite $i$ and $n_i$ as number of authors whom $i$ cites. Then reciprocity $r_i$ of the author $i$ is defined as $\frac{n_i}{N_i}$. 
+
+\subsubsection{Probability that pairs Co-author given they exchange non-zero citation in the past:}
+
+\subsubsection{Change in average network distance between pairs VS number of citations per pair over time:}
 
 \section{Results}
 
@@ -151,7 +169,7 @@ The above is done for $\approx 44000$ pairs. Out of these we remove the pairs th
   \caption{Distance Matrices for the years 1990,2000 and 2013 from top left to right. As the network evolves the color gradient represents the distribution of distances in co-authorship network at the given time. The bottom panel plot the distribution ratios of distanes $d_{ij}$ between pairs for the years 1990,2000 and 2013 (left to right)}
   \label{f2}
 \end{figure*}
-In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to the network size. Distribution of distances in the network as it  evolves shows the increased connectivity between authors at different distances. The peak of the distribution is between 5 and 7 and the spread from the mean(variance) also decreases as the network evolves with time. 
+In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to the network size. Distribution of distances in the network as it  evolves shows the increased connectivity between authors at different distances. Pairs that have no existing path have been excluded in the above graphs. The d value for the peak of the distribution(5 in the final graph) and the spread from the mean(variance) decreases as the network evolves with time. The decreasing values for the peak and variance are due to the increase in connectivity of the network. 
 
 {\color{blue}We should compare this with existing analytical function for distances in a network(probably Newman has some review over this) and see if we can explain the pattern in a much better way.}
 
@@ -176,7 +194,8 @@ In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to th
 	\label{f3a}
 \end{figure*}
 
-The number of citations exchanged by pairs ij of authors at distance d apart in the co-authorship network for a time t falls almost exponentially as in Fig\ref{f3}. We ignore the citation exchanged between pairs that have no path in between.(Reason of doing this? Maybe because we are only interested in seeing the change in citations with your near or distant collaborators). Later we do study the history of co-authorship events to see the change in citations exchange before and after direct collaboration. 
+The number of citations exchanged by pairs ij of authors at distance d apart in the co-authorship network for a time t falls almost exponentially as in Fig\ref{f3}. We ignore the citation exchanged between pairs that have no path in between.(Reason of doing this? Maybe because we are only interested in seeing the change in citations with your near or distant collaborators).
+
 Another way to look at the same is to measure the rate of change of citations exchanged between ij pairs at a distance d for the time series data Fig\ref{f3a}. We notice that for direct collaborations(co-authorship events) the rate of citations exchanged increase with time with a sudden transition post 1995 which is also true for average degree of nodes as shown in figure. However the growth rate falls rapidly for distance 2 between pairs and is almost zero for distance 3 and higher. {\color{blue}This means that the citations exchange between ij pairs far in the co-authorship network could be considered as random.}
 
 The change in the strength of collaboration between two authors i and j can be seen in fig\ref{f4}. Here the strength of collaboration is indicated by the total citations exchanged by i and j in that time period through their papers. This includes cases where i and j cite there previously written paper. For our case this adds to the strength. 
@@ -207,19 +226,15 @@ The change in the strength of collaboration between two authors i and j can be s
 	\label{f5}
 \end{figure*}
 
-It is observed that the citations exchanged peak after 1st collaboration and then fall. Interestingly the peak for this distribution is within 4 years of $T_c$. The mean active period for Indians is around 4.5 years (from our previous study). The decay observed fits really well with the Weinbull distribution defined as :
+It is observed that the citations exchanged peak after 1st collaboration and then fall. Interestingly the peak for this distribution is within 4 years of $T_c$. The mean active period for Indians is around 4.5 years (from our previous study). The decay observed fits well with the Weinbull distribution defined as :
 
 \begin{equation}
  f(t) = \frac{b}{n}(\frac{t}{n})^{b-1} e^{-(\frac{t}{n})^b}
 \end{equation}
 
-This function as discussed in the paper in PNAS(cite the PNAS aging paper) defines the change in probability of a paper receiving a citation after t years of publication. 
+{\color{blue}This function as discussed in the paper in PNAS(cite the PNAS aging paper) defines the change in probability of a paper receiving a citation after t years of publication.}
 
 In our case it represents the decay in strength of collaboration. We need to explain the significance of parameters b and n in distribution. The observed decay in strength of collaboration can be an implicit cause due the aging function for probability of a paper receiving citation as proposed in the paper(PNAS). 
-
-The change near $T_c$ however is almost like a step function. The final function can be modeled as a convolution of two functions (step+aging). However we need to be sure of the information represented by the observed distribution.
-
-\subsection{Probability Calculations}
 
 
 \end{document}
