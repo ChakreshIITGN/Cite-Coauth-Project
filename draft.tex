@@ -150,9 +150,22 @@ For all pairs in Distance matrix (considering only the upper diagonal) at time t
 For every author $i$ in the Citation matrix $C(t)$ we define $N_i$ number of authors that cite $i$ and $n_i$ as number of authors whom $i$ cites. Then reciprocity $r_i$ of the author $i$ is defined as $\frac{n_i}{N_i}$. 
 
 \subsubsection{Probability that pairs Co-author given they exchange non-zero citation in the past:}
+We define $P(C)$ as probability that they cite each other before collaborating in  $t$ and $P_{n}(c)$ as probability that the pair have cited each $n$ years before collaboration in $t$. 
+There fore we have:
+\begin{equation}
+P(C) = P_{1}(c) + P_{2}(c) + \dots + P_{t-T_0}(c) 
+\end{equation}
+$T_0$ is time of first co appearance. Let $P(D=1)$ be probability of co-authoring then we have:
+\begin{equation}
+P(D=1|C) = \frac{P(C|D=1).P(D=1)}{P(C)}
+\end{equation}
 
 \subsubsection{Change in average network distance between pairs VS number of citations per pair over time:}
-
+For every Distance matrix $D(t)$ at time t, we measure the distribution of network distances as in fig\ref{f2}. The value of the peak $d^m_{ij}(t)$ for every time, the longest path value $d^l_{ij}(t)$ and the $\bar{d}_{ij}(t)$ at every time step are then plotted against the average number of citations exchanged per pair $\bar{c}$ at time step t.
+\begin{equation}
+\bar{c} = \frac{\sum_{p_{ij}=1}^{N} C_{p_{ij}} + C_{p_{ji}}}{N} 
+\end{equation}
+$p_{ij}$ is pair that have non zero mutual citations, $C_{p_{ij}} + C_{p_{ji}}$ is total citations exchanged between $p_{ij}$ and N is number of such pairs.
 \section{Results}
 
 \begin{figure*}[htbp]  

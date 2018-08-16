@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  16 AUG 2018 02:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  16 AUG 2018 08:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,87 +523,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--131
 <plots/d_m_1990.pdf, id=16, 433.62pt x 433.62pt>
 File: plots/d_m_1990.pdf Graphic file (type pdf)
  <use plots/d_m_1990.pdf>
-Package pdftex.def Info: plots/d_m_1990.pdf used on input line 160.
+Package pdftex.def Info: plots/d_m_1990.pdf used on input line 173.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
 <plots/d_m_2000.pdf, id=17, 433.62pt x 433.62pt>
 File: plots/d_m_2000.pdf Graphic file (type pdf)
  <use plots/d_m_2000.pdf>
-Package pdftex.def Info: plots/d_m_2000.pdf used on input line 161.
+Package pdftex.def Info: plots/d_m_2000.pdf used on input line 174.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
 <plots/d_m_2013.pdf, id=18, 433.62pt x 433.62pt>
 File: plots/d_m_2013.pdf Graphic file (type pdf)
  <use plots/d_m_2013.pdf>
-Package pdftex.def Info: plots/d_m_2013.pdf used on input line 162.
+Package pdftex.def Info: plots/d_m_2013.pdf used on input line 175.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
 <plots/Dij_dist_hist_1990.pdf, id=19, 433.62pt x 433.62pt>
 File: plots/Dij_dist_hist_1990.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_1990.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 164.
+Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 177.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
 <plots/Dij_dist_hist_2000.pdf, id=20, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2000.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2000.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 165.
+Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 178.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
 <plots/Dij_dist_hist_2013.pdf, id=21, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2013.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2013.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 166.
+Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 179.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
 <plots/fig1.pdf, id=22, 433.62pt x 289.08pt>
 File: plots/fig1.pdf Graphic file (type pdf)
  <use plots/fig1.pdf>
-Package pdftex.def Info: plots/fig1.pdf used on input line 179.
+Package pdftex.def Info: plots/fig1.pdf used on input line 192.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
 
 <plots/fig2.pdf, id=23, 433.62pt x 289.08pt>
 File: plots/fig2.pdf Graphic file (type pdf)
  <use plots/fig2.pdf>
-Package pdftex.def Info: plots/fig2.pdf used on input line 189.
+Package pdftex.def Info: plots/fig2.pdf used on input line 202.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
 <plots/fig3.pdf, id=24, 433.62pt x 289.08pt>
 File: plots/fig3.pdf Graphic file (type pdf)
  <use plots/fig3.pdf>
-Package pdftex.def Info: plots/fig3.pdf used on input line 190.
+Package pdftex.def Info: plots/fig3.pdf used on input line 203.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
  [2]
-<plots/d1.png, id=33, 433.62pt x 289.08pt>
+<plots/d1.png, id=34, 433.62pt x 289.08pt>
 File: plots/d1.png Graphic file (type png)
  <use plots/d1.png>
-Package pdftex.def Info: plots/d1.png used on input line 210.
+Package pdftex.def Info: plots/d1.png used on input line 223.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
-<plots/aging_in_colab.pdf, id=35, 433.62pt x 289.08pt>
+<plots/aging_in_colab.pdf, id=36, 433.62pt x 289.08pt>
 File: plots/aging_in_colab.pdf Graphic file (type pdf)
 
 <use plots/aging_in_colab.pdf>
-Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 211.
+Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 224.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2.png, id=36, 433.62pt x 289.08pt>
+ <plots/d2.png, id=37, 433.62pt x 289.08pt>
 File: plots/d2.png Graphic file (type png)
 
 <use plots/d2.png>
-Package pdftex.def Info: plots/d2.png used on input line 221.
+Package pdftex.def Info: plots/d2.png used on input line 234.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2_avg.png, id=37, 433.62pt x 289.08pt>
+ <plots/d2_avg.png, id=38, 433.62pt x 289.08pt>
 File: plots/d2_avg.png Graphic file (type png)
 
 <use plots/d2_avg.png>
-Package pdftex.def Info: plots/d2_avg.png used on input line 222.
+Package pdftex.def Info: plots/d2_avg.png used on input line 235.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
-
-No file draft.bbl.
-[3 <./plots/d_m_1990.pdf> <./plots/d_m_2000.pdf
+ [3 <./plots/d_m_1990.pdf> <./plots/d_m_2000.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/d_m_2000.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -627,7 +625,9 @@ clusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/fig1.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [4 <./plots/fig2.pdf> <./plots/fig3.pdf
+>]
+No file draft.bbl.
+[4 <./plots/fig2.pdf> <./plots/fig3.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/fig3.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -635,33 +635,34 @@ ple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/aging_in_colab.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
-> <./plots/d2.png> <./plots/d2_avg.png>] (./draft.aux) ) 
+>] [5 <./plots/d2.png> <./plots/d2_avg.png>] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
- 6195 strings out of 494953
- 86847 string characters out of 6180977
+ 6197 strings out of 494953
+ 86865 string characters out of 6180977
  175565 words of memory out of 5000000
- 9370 multiletter control sequences out of 15000+600000
+ 9372 multiletter control sequences out of 15000+600000
  12636 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,8n,38p,694b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on draft.pdf (4 pages, 346033 bytes).
+</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti9.pfb>
+Output written on draft.pdf (5 pages, 357123 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 466 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
