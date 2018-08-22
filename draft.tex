@@ -144,10 +144,18 @@ With $\binom{N(t)}{2}$ possible pairs we can calculate respective fractions
 
 \subsubsection{Co-author but do not cite:}
 For all pairs in Distance matrix (considering only the upper diagonal) at time t $D(t)$ we count pairs $N^D$ with  $D_{ij} = 1$. Among the pairs $N^D$ we count pairs $N^D_{(C_{ij} + C_{ji}=0)}$
-
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.45]{plots/d1_zcit}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Number of author pairs that co-author but do not cite each other.}
+	\label{f2}
+\end{figure}
 
 \subsubsection{Reciprocity:}
 For every author $i$ in the Citation matrix $C(t)$ we define $N_i$ number of authors that cite $i$ and $n_i$ as number of authors whom $i$ cites. Then reciprocity $r_i$ of the author $i$ is defined as $\frac{n_i}{N_i}$. 
+
 
 \subsubsection{Probability that pairs Co-author given they exchange non-zero citation in the past:}
 We define $P(C)$ as probability that they cite each other before collaborating in  $t$ and $P_{n}(c)$ as probability that the pair have cited each $n$ years before collaboration in $t$. 
@@ -170,30 +178,27 @@ $p_{ij}$ is pair that have non zero mutual citations, $C_{p_{ij}} + C_{p_{ji}}$ 
 
 \begin{figure*}[htbp]  
 	\centering
-	\includegraphics[scale = 0.33]{plots/d_m_1990}
-	\includegraphics[scale = 0.33]{plots/d_m_2000}
-	\includegraphics[scale = 0.33]{plots/d_m_2013}
-	
+		
 	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_1990}
 	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_2000}
 	\includegraphics[scale = 0.33]{plots/Dij_dist_hist_2013}
 	
   \captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
-  \caption{Distance Matrices for the years 1990,2000 and 2013 from top left to right. As the network evolves the color gradient represents the distribution of distances in co-authorship network at the given time. The bottom panel plot the distribution ratios of distanes $d_{ij}$ between pairs for the years 1990,2000 and 2013 (left to right)}
-  \label{f2}
+  \caption{The distribution ratios of distanes $d_{ij}$ between pairs for the years 1990,2000 and 2013 (left to right)}
+  \label{f3}
 \end{figure*}
-In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to the network size. Distribution of distances in the network as it  evolves shows the increased connectivity between authors at different distances. Pairs that have no existing path have been excluded in the above graphs. The d value for the peak of the distribution(5 in the final graph) and the spread from the mean(variance) decreases as the network evolves with time. The decreasing values for the peak and variance are due to the increase in connectivity of the network. 
+In Fig.\ref{f3} the spread in distance matrices(top panel) is proportional to the network size. Distribution of distances in the network as it  evolves shows the increased connectivity between authors at different distances. Pairs that have no existing path have been excluded in the above graphs. The d value for the peak of the distribution(5 in the final graph) and the spread from the mean(variance) decreases as the network evolves with time. The decreasing values for the peak and variance are due to the increase in connectivity of the network. 
 
 {\color{blue}We should compare this with existing analytical function for distances in a network(probably Newman has some review over this) and see if we can explain the pattern in a much better way.}
 
 \begin{figure}
 	\centering
 	
-	\includegraphics[scale = 0.55]{plots/fig1}
+	\includegraphics[scale = 0.49]{plots/fig1}
 	
 \captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
 \caption{Total number of citations between pairs of authors VS distance D between pairs in the co-authorship network(for all years till 2013)}
-   \label{f3}
+   \label{f4}
 \end{figure}
 
 \begin{figure*}
@@ -204,14 +209,14 @@ In Fig.\ref{f2} the spread in distance matrices(top panel) is proportional to th
 	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
 	
 	\caption{Change in the number of citations exchanged between pair ij at distance D with time}
-	\label{f3a}
+	\label{f4a}
 \end{figure*}
 
-The number of citations exchanged by pairs ij of authors at distance d apart in the co-authorship network for a time t falls almost exponentially as in Fig\ref{f3}. We ignore the citation exchanged between pairs that have no path in between.(Reason of doing this? Maybe because we are only interested in seeing the change in citations with your near or distant collaborators).
+The number of citations exchanged by pairs ij of authors at distance d apart in the co-authorship network for a time t falls almost exponentially as in Fig\ref{f4}. We ignore the citation exchanged between pairs that have no path in between.(Reason of doing this? Maybe because we are only interested in seeing the change in citations with your near or distant collaborators).
 
-Another way to look at the same is to measure the rate of change of citations exchanged between ij pairs at a distance d for the time series data Fig\ref{f3a}. We notice that for direct collaborations(co-authorship events) the rate of citations exchanged increase with time with a sudden transition post 1995 which is also true for average degree of nodes as shown in figure. However the growth rate falls rapidly for distance 2 between pairs and is almost zero for distance 3 and higher. {\color{blue}This means that the citations exchange between ij pairs far in the co-authorship network could be considered as random.}
+Another way to look at the same is to measure the rate of change of citations exchanged between ij pairs at a distance d for the time series data Fig\ref{f4a}. We notice that for direct collaborations(co-authorship events) the rate of citations exchanged increase with time with a sudden transition post 1995 which is also true for average degree of nodes as shown in figure. However the growth rate falls rapidly for distance 2 between pairs and is almost zero for distance 3 and higher. {\color{blue}This means that the citations exchange between ij pairs far in the co-authorship network could be considered as random.}
 
-The change in the strength of collaboration between two authors i and j can be seen in fig\ref{f4}. Here the strength of collaboration is indicated by the total citations exchanged by i and j in that time period through their papers. This includes cases where i and j cite there previously written paper. For our case this adds to the strength. 
+The change in the strength of collaboration between two authors i and j can be seen in fig\ref{f5}. Here the strength of collaboration is indicated by the total citations exchanged by i and j in that time period through their papers. This includes cases where i and j cite there previously written paper. For our case this adds to the strength. 
 
 {\color{red}Literature review suggests that there is a threshold time for every paper to be discovered for citation hence it would be very uncommon for authors to cite papers published in the same year of their publication unless they know they know the authors or are working together. for ex. I would know more about my colleagues papers}
 
@@ -225,7 +230,7 @@ The change in the strength of collaboration between two authors i and j can be s
 		
 \captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
 \caption{Distribution of citations exchanged before and after Time of first co-authorship event between authors. The sudden peak and rise is an interesting observation specially the decay part.}
-   \label{f4}
+   \label{f5}
 \end{figure*}
 
 \begin{figure*}[htbp]  
@@ -236,7 +241,7 @@ The change in the strength of collaboration between two authors i and j can be s
 	
 	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
 	\caption{Distribution of citations exchanged before and after Time of first co-authorship event between authors. The sudden peak and rise is an interesting observation specially the decay part.}
-	\label{f5}
+	\label{f6}
 \end{figure*}
 
 It is observed that the citations exchanged peak after 1st collaboration and then fall. Interestingly the peak for this distribution is within 4 years of $T_c$. The mean active period for Indians is around 4.5 years (from our previous study). The decay observed fits well with the Weinbull distribution defined as :
@@ -249,5 +254,8 @@ It is observed that the citations exchanged peak after 1st collaboration and the
 
 In our case it represents the decay in strength of collaboration. We need to explain the significance of parameters b and n in distribution. The observed decay in strength of collaboration can be an implicit cause due the aging function for probability of a paper receiving citation as proposed in the paper(PNAS). 
 
+\section{Conclusion}
+
+\section{References}
 
 \end{document}
