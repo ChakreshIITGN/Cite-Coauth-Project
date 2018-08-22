@@ -142,6 +142,15 @@ For all pairs in Citation matrix at time t $C(t)$, we count the number of pairs 
 
 With $\binom{N(t)}{2}$ possible pairs we can calculate respective fractions 
 
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.45]{plots/cit_dnot1}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Number of author pairs that co-author but do not cite each other.}
+	\label{ftwo}
+\end{figure}
+
 \subsubsection{Co-author but do not cite:}
 For all pairs in Distance matrix (considering only the upper diagonal) at time t $D(t)$ we count pairs $N^D$ with  $D_{ij} = 1$. Among the pairs $N^D$ we count pairs $N^D_{(C_{ij} + C_{ji}=0)}$
 \begin{figure}
@@ -156,7 +165,14 @@ For all pairs in Distance matrix (considering only the upper diagonal) at time t
 \subsubsection{Reciprocity:}
 For every author $i$ in the Citation matrix $C(t)$ we define $N_i$ number of authors that cite $i$ and $n_i$ as number of authors whom $i$ cites. Then reciprocity $r_i$ of the author $i$ is defined as $\frac{n_i}{N_i}$. 
 
-
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.45]{plots/rec}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Number of author pairs that co-author but do not cite each other.}
+	\label{freci}
+\end{figure}
 \subsubsection{Probability that pairs Co-author given they exchange non-zero citation in the past:}
 We define $P(C)$ as probability that they cite each other before collaborating in  $t$ and $P_{n}(c)$ as probability that the pair have cited each $n$ years before collaboration in $t$. 
 There fore we have:
@@ -197,7 +213,7 @@ In Fig.\ref{f3} the spread in distance matrices(top panel) is proportional to th
 	\includegraphics[scale = 0.49]{plots/fig1}
 	
 \captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
-\caption{Total number of citations between pairs of authors VS distance D between pairs in the co-authorship network(for all years till 2013)}
+\caption{Average Total number of citations between pairs of authors VS distance D between pairs in the co-authorship network(for years till 1990,2000 and 2013)}
    \label{f4}
 \end{figure}
 
