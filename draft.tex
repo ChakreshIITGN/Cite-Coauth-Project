@@ -78,6 +78,15 @@ In this project we explore the interdependence between collaboration networks (c
 %\pacs{Valid PACS appear here}
 \maketitle
 
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[scale = 0.5]{plots/schematic_of_networks}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Diagram of Interdependent citation and co-authorship networks.}
+	\label{fi}
+\end{figure*}
+
 
 \section{Introduction}
 
@@ -130,6 +139,17 @@ $C(t) = 	\begin{cases} 	C^{ij}_{in} ,$ number of times j cites i $ \\
            	\end{cases}$\\
  
 $C(t)$ stores the citations exchanged between papers written by i and j for the given time t. The citations recorded are cumulative. The above citation and distance matrices store the history of interactions between all possible author  $\binom{N}{2}$ where $N = 8084$ from 1970-2013. We use these matrices for all our calculations in the paper.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale = 0.4]{plots/matrix_schematic}
+	
+	\captionsetup{singlelinecheck=false, justification=raggedright,  labelsep=space}
+	\caption{Schematic diagram showing construction of Data Matrices D and C.}
+	\label{fone}
+\end{figure}
+
+
 
 For tracing the history of co-authorship events fig\ref{f4}, we extract the distance 1 collaborations at the end of data (edges in 2013 co-authorship graph). We then trace the presence of edge between i and j (contributing authors) in reverse. The time when the edge 1st appears is marked $T_c$. Then we check for the presence of i and j in the network before $T_c$ and stop at time $T_0$ when both i and j appear together in the network. The number of citations exchanged by pairs at every time before and after collaboration are recorded. The obtained time series is shifted on the axis to 0 so that we can compare the citation exchanged before and after first collaboration.
 
