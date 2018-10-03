@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  22 AUG 2018 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  3 OCT 2018 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -514,89 +514,98 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 
-<plots/goals.png, id=2, 810.02625pt x 196.735pt>
-File: plots/goals.png Graphic file (type png)
- <use plots/goals.png>
-Package pdftex.def Info: plots/goals.png used on input line 112.
-(pdftex.def)             Requested size: 226.8058pt x 55.08542pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
+Underfull \hbox (badness 2689) in paragraph at lines 108--109
+ []\OT1/cmr/m/n/10 Waiting time dis-tri-bu-tion for con-sec-u-tive co-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 2689) in paragraph at lines 109--110
+ []\OT1/cmr/m/n/10 Waiting time dis-tri-bu-tion for con-sec-u-tive co-
+ []
+
+<plots/goals.png, id=2, 810.02625pt x 196.735pt>
+File: plots/goals.png Graphic file (type png)
+ <use plots/goals.png>
+Package pdftex.def Info: plots/goals.png used on input line 115.
+(pdftex.def)             Requested size: 226.8058pt x 55.08542pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
+
+ []
+
 <plots/matrix_schematic.png, id=19, 581.17125pt x 506.89375pt>
 File: plots/matrix_schematic.png Graphic file (type png)
 
 <use plots/matrix_schematic.png>
-Package pdftex.def Info: plots/matrix_schematic.png used on input line 145.
+Package pdftex.def Info: plots/matrix_schematic.png used on input line 148.
 (pdftex.def)             Requested size: 232.46437pt x 202.7539pt.
 
 <plots/cit_dnot1.pdf, id=20, 433.62pt x 289.08pt>
 File: plots/cit_dnot1.pdf Graphic file (type pdf)
  <use plots/cit_dnot1.pdf>
-Package pdftex.def Info: plots/cit_dnot1.pdf used on input line 167.
+Package pdftex.def Info: plots/cit_dnot1.pdf used on input line 170.
 (pdftex.def)             Requested size: 195.1272pt x 130.0848pt.
 
 <plots/d1_zcit.pdf, id=21, 433.62pt x 289.08pt>
 File: plots/d1_zcit.pdf Graphic file (type pdf)
  <use plots/d1_zcit.pdf>
-Package pdftex.def Info: plots/d1_zcit.pdf used on input line 178.
+Package pdftex.def Info: plots/d1_zcit.pdf used on input line 181.
 (pdftex.def)             Requested size: 195.1272pt x 130.0848pt.
 
-<plots/rec.pdf, id=22, 433.62pt x 289.08pt>
-File: plots/rec.pdf Graphic file (type pdf)
- <use plots/rec.pdf>
-Package pdftex.def Info: plots/rec.pdf used on input line 190.
-(pdftex.def)             Requested size: 195.1272pt x 130.0848pt.
- [2 <./plots/schematic_of_networks.png> <./plots/goals.png> <./plots/matrix_sch
-ematic.png>]
+[2 <./plots/schematic_of_networks.png> <./plots/goals.png> <./plots/matrix_sche
+matic.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 196.
+ on input line 190.
+
+<plots/rec.pdf, id=28, 433.62pt x 289.08pt>
+File: plots/rec.pdf Graphic file (type pdf)
+ <use plots/rec.pdf>
+Package pdftex.def Info: plots/rec.pdf used on input line 193.
+(pdftex.def)             Requested size: 195.1272pt x 130.0848pt.
 
 <plots/Dij_dist_hist_1990.pdf, id=29, 433.62pt x 433.62pt>
 File: plots/Dij_dist_hist_1990.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_1990.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 218.
+Package pdftex.def Info: plots/Dij_dist_hist_1990.pdf used on input line 222.
 (pdftex.def)             Requested size: 143.09503pt x 143.09503pt.
 
 <plots/Dij_dist_hist_2000.pdf, id=30, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2000.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2000.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 219.
+Package pdftex.def Info: plots/Dij_dist_hist_2000.pdf used on input line 223.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
 <plots/Dij_dist_hist_2013.pdf, id=31, 433.62pt x 289.08pt>
 File: plots/Dij_dist_hist_2013.pdf Graphic file (type pdf)
 
 <use plots/Dij_dist_hist_2013.pdf>
-Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 220.
+Package pdftex.def Info: plots/Dij_dist_hist_2013.pdf used on input line 224.
 (pdftex.def)             Requested size: 143.09503pt x 95.39668pt.
 
 <plots/fig1.pdf, id=32, 433.62pt x 289.08pt>
 File: plots/fig1.pdf Graphic file (type pdf)
  <use plots/fig1.pdf>
-Package pdftex.def Info: plots/fig1.pdf used on input line 233.
+Package pdftex.def Info: plots/fig1.pdf used on input line 237.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
 <plots/fig2.pdf, id=33, 433.62pt x 289.08pt>
 File: plots/fig2.pdf Graphic file (type pdf)
  <use plots/fig2.pdf>
-Package pdftex.def Info: plots/fig2.pdf used on input line 243.
+Package pdftex.def Info: plots/fig2.pdf used on input line 247.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
 <plots/fig3.pdf, id=34, 433.62pt x 289.08pt>
 File: plots/fig3.pdf Graphic file (type pdf)
  <use plots/fig3.pdf>
-Package pdftex.def Info: plots/fig3.pdf used on input line 244.
+Package pdftex.def Info: plots/fig3.pdf used on input line 248.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
  [3 <./plots/cit_dnot1.pdf> <./plots/d1_zcit.pdf
 
@@ -606,29 +615,29 @@ ltiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./plots/rec.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <plots/d1.png, id=131, 433.62pt x 289.08pt>
+>] <plots/d1.png, id=130, 433.62pt x 289.08pt>
 File: plots/d1.png Graphic file (type png)
  <use plots/d1.png>
-Package pdftex.def Info: plots/d1.png used on input line 264.
+Package pdftex.def Info: plots/d1.png used on input line 268.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
-<plots/aging_in_colab.pdf, id=133, 433.62pt x 289.08pt>
+<plots/aging_in_colab.pdf, id=132, 433.62pt x 289.08pt>
 File: plots/aging_in_colab.pdf Graphic file (type pdf)
 
 <use plots/aging_in_colab.pdf>
-Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 265.
+Package pdftex.def Info: plots/aging_in_colab.pdf used on input line 269.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2.png, id=134, 433.62pt x 289.08pt>
+ <plots/d2.png, id=133, 433.62pt x 289.08pt>
 File: plots/d2.png Graphic file (type png)
 
 <use plots/d2.png>
-Package pdftex.def Info: plots/d2.png used on input line 275.
+Package pdftex.def Info: plots/d2.png used on input line 279.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
- <plots/d2_avg.png, id=135, 433.62pt x 289.08pt>
+ <plots/d2_avg.png, id=134, 433.62pt x 289.08pt>
 File: plots/d2_avg.png Graphic file (type png)
 
 <use plots/d2_avg.png>
-Package pdftex.def Info: plots/d2_avg.png used on input line 276.
+Package pdftex.def Info: plots/d2_avg.png used on input line 280.
 (pdftex.def)             Requested size: 212.47566pt x 141.65044pt.
 
 No file draft.bbl.
@@ -654,10 +663,10 @@ pdfTeX warning: /usr/bin/pdflatex (file ./plots/aging_in_colab.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 > <./plots/d2.png> <./plots/d2_avg.png>] (./draft.aux) ) 
 Here is how much of TeX's memory you used:
- 6210 strings out of 494953
- 87158 string characters out of 6180977
- 174637 words of memory out of 5000000
- 9383 multiletter control sequences out of 15000+600000
+ 6211 strings out of 494953
+ 87170 string characters out of 6180977
+ 177637 words of memory out of 5000000
+ 9384 multiletter control sequences out of 15000+600000
  12636 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,8n,38p,694b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -668,18 +677,17 @@ t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti9.pfb>
-Output written on draft.pdf (5 pages, 372647 bytes).
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on draft.pdf (5 pages, 366137 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 463 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
